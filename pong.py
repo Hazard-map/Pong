@@ -31,6 +31,22 @@ class Position:
 		return (self.x, self.y,)
 
 
+class Ball:
+    speed = 10
+    color = WHITE
+    width = 10
+    height = 90
+
+    def __init__(self, pos):
+        self.pos = pos
+    
+    def _update_postion(self, key):
+        ...
+
+    def draw(self, screen):
+        pygame.draw.rect(screen, self.color, self.pos + (height, width))
+
+
 def draw_two_rectangles(screen):
 	pygame.draw.rect(screen, WHITE, (20, 70, 10, 180))
 	pygame.draw.rect(screen, WHITE, (370, 70, 10, 180))
