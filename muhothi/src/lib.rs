@@ -3,7 +3,7 @@ pub fn execute_bf(s :&String) -> Result<(), &str> {
 
     let mut count = 0;
     let mut i :usize = 0;
-    let mut note :usize = 0;
+    let note :usize = 0;
     while count != s.len() {
         match s.chars().nth(count).unwrap() {
             '+' => buf[i] += 1,
